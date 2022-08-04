@@ -1,18 +1,17 @@
 import { createGlobalStyle } from "styled-components";
+
 export default createGlobalStyle`
     :root{
         --black: #000000;
         --white: #ffffff;
         --dark_purple: #422040;
         --pewter_blue: #9CAFB7;
-        --spanish_carmine: #D11149;
-        --safety_orange: #F17105;
-        --jonquill: #E6C229;
         --raisin_black: #2E282A;
         --grenn_ryb: #76B041;
         --green_blue_crayoia:#2081C3;
         --metallic_seaweed: #028090;
-        --star_wars_color:#04d5f1
+        --star_wars_color:#04d5f1;
+        
     }
 
     *{

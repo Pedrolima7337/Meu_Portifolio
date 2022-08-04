@@ -13,6 +13,11 @@ export const Container = styled.div`
 
 export const Content = styled.section`
   display: inline-flex;
+  @media (max-width: 621px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 export const Estatico = styled.div`
   display: flex;

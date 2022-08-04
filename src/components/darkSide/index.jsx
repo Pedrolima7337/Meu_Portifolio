@@ -21,10 +21,12 @@ export const DarkSide = () => {
               description={
                 "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros"
               }
-              img={borarachar}
+              img={""}
               ferramentas={"sla,sla,lsal,las,asl,alskda"}
               color={"#252323"}
+              dark
             />
+            <span className="techs">Principais techs que eu usei:</span>
             <CardSaber
               cor={"#ff0000"}
               tech={"React"}
@@ -54,6 +56,7 @@ export const DarkSide = () => {
               ferramentas={"sla,sla,lsal,las,asl,alskda"}
               color={"#252323"}
             />
+            <span className="techs">Principais techs que eu usei:</span>
             <CardSaber
               cor={"#ff0000"}
               tech={"React"}

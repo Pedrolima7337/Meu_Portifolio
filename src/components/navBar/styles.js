@@ -11,27 +11,51 @@ export const Container = styled.div`
   border-bottom: 1px solid var(--green_blue_crayoia);
   box-shadow: 1px 4px 15px -5px var(--green_blue_crayoia);
   height: 50px;
-  h1 {
-    font-weight: bold;
-    font-size: 18px;
+
+  .logo {
+    display: flex;
+    img {
+      width: 40px;
+    }
+    :hover {
+      cursor: pointer;
+    }
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #aaaaaa;
+      margin-left: 3px;
+      line-height: 15px;
+    }
   }
-  h1:hover {
-    cursor: pointer;
+  .nomeLogo {
+    display: flex;
+    border-left: 2px solid #aaaaaa;
+    height: 30px;
+    align-items: center;
   }
+
   .list {
     list-style: none;
     display: flex;
     gap: 25px;
-    li {
+    div {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 8px;
     }
-    li:hover {
+    div:hover {
       cursor: pointer;
       transition: 0.4s;
       filter: invert(1);
+    }
+  }
+  @media (max-width: 580px) {
+    .dashboard {
+      display: none;
     }
   }
 `;

@@ -2,27 +2,38 @@ import { Container } from "./styles";
 import { MdRestartAlt, MdViewSidebar } from "react-icons/md";
 import { FaHome } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-
+import Logo from "../../assets/Logo.png";
 export const NavBar = () => {
   const navigate = useNavigate();
 
   return (
     <Container>
-      <div>
-        <h1 onClick={() => navigate("/dashboard")}>Pedro Lima</h1>
+      <div className="logo" onClick={() => navigate("/dashboard")}>
+        <img src={Logo} alt={"Logo"} />
+        <div className="nomeLogo">
+          <h1>
+            Pedro <br /> Lima
+          </h1>
+        </div>
       </div>
       <div>
         <ul className="list">
           <li onClick={() => navigate("/")}>
-            <MdRestartAlt /> Inicio
+            <div>
+              <MdRestartAlt /> Inicio
+            </div>
           </li>
-          <li onClick={() => navigate("/dashboard")}>
-            <FaHome />
-            DashBoard
+          <li className="dashboard" onClick={() => navigate("/dashboard")}>
+            <div>
+              <FaHome />
+              DashBoard
+            </div>
           </li>
           <li onClick={() => navigate("/meus_projetos")}>
-            <MdViewSidebar />
-            Meus Projetos
+            <div>
+              <MdViewSidebar />
+              Meus Projetos
+            </div>
           </li>
         </ul>
       </div>

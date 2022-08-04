@@ -1,8 +1,10 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
+  background-color: #000;
+  color: var(--white);
   justify-content: center;
   font-family: "Finlandica", sans-serif;
   flex-direction: column;
@@ -21,11 +23,24 @@ export const Container = styled.div`
     margin: 20px 0;
   }
 `;
+
+const run = keyframes`
+  0% {
+    left: -200px;
+    opacity:0;
+  }
+
+  100% {
+    left: 0; 
+    opacity: 1;    
+  }
+  `;
 export const PerfilDiv = styled.div`
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
 `;
 
@@ -36,6 +51,9 @@ export const ContentText = styled.div`
   line-height: 24px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  animation: ${run} 0.5s;
+  overflow: hidden;
   p {
     line-height: 26px;
     font-size: 25px;
@@ -49,7 +67,7 @@ export const Buttons = styled.div`
     margin-right: 20px;
     padding: 8px;
     width: 180px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -89,17 +107,31 @@ export const ContentList = styled.div`
   }
 `;
 export const DivImg = styled.div`
+  position: relative;
+  animation: ${run} 0.5s;
+  overflow: hidden;
   img {
     border: 2px solid var(--metallic_seaweed);
-    width: 350px;
-    height: 300px;
+    width: 320px;
+    height: 280px;
     border-radius: 100%;
   }
 `;
+const runIcons = keyframes`
+  0% {
+    bottom: -200px;
+    opacity:0;
+  }
+
+  100% {
+    bottom: 0; 
+    opacity: 1;    
+  }
+  `;
 export const ContentIcons = styled.div`
   text-align: center;
   margin-top: 20px;
-  color: var(--raisin_black);
+  color: #c9c9c9;
   h1 {
     font-size: 40px;
     font-weight: 600;
@@ -110,13 +142,17 @@ export const Icons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  div {
-    width: 50px;
-    background: none;
-    border: none;
-    margin-right: 20px;
-  }
-  div:hover {
+  padding: 10px;
+`;
+export const IconsImg = styled.div`
+  width: 50px;
+  background: none;
+  border: none;
+  margin-right: 20px;
+  position: relative;
+  animation: ${runIcons} ${({ time }) => time};
+  overflow: hidden;
+  :hover {
     cursor: pointer;
     transition: 1s;
     transform: scale(1.25, 1.25);

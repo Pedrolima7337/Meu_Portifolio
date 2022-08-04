@@ -7,6 +7,7 @@ import {
   ContentText,
   DivImg,
   Icons,
+  IconsImg,
   PerfilDiv,
 } from "./styles";
 import foto from "../../assets/Foto.jpg";
@@ -121,57 +122,57 @@ export const Dashboard = () => {
       <ContentIcons>
         <h1>Habilidades em:</h1>
         <Icons className="icons">
-          <div>
+          <IconsImg time={"0.5s"}>
             <SiJavascript size={"50px"} title={"JavaScript"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"0.7s"}>
             <SiVite size={"50px"} title={"Vite"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"1s"}>
             <SiTypescript size={"50px"} title={"TypeScript"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"1.3s"}>
             <SiStyledcomponents size={"50px"} title={"Styled Components"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"1.6s"}>
             <SiRedux size={"50px"} title={"Redux"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"2s"}>
             <SiJest size={"50px"} title={"Jest"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"2.2s"}>
             <SiExpress size={"50px"} title={"Express"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"2.5s"}>
             <SiPostgresql size={"50px"} title={"Postgre SQL"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"2.8s"}>
             <SiPython size={"50px"} title={"Python"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"3.1s"}>
             <SiReact size={"50px"} title={"React"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"3.4s"}>
             <SiDjango size={"50px"} title={"Django"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"3.7s"}>
             <SiJsonwebtokens size={"50px"} title={"JsonWebToken"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"4s"}>
             <SiNodedotjs size={"50px"} title={"NodeJS"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"4.2s"}>
             <SiGit size={"50px"} title={"Git"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"4.5s"}>
             <SiHtml5 size={"50px"} title={"HTMl5"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"5s"}>
             <SiDocker size={"50px"} title={"Docker"} />
-          </div>
-          <div>
+          </IconsImg>
+          <IconsImg time={"5.1s"}>
             <SiCss3 size={"50px"} title={"Css3"} />
-          </div>
+          </IconsImg>
         </Icons>
       </ContentIcons>
     </Container>

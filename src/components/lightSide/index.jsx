@@ -1,6 +1,7 @@
 import { Container, ContentView, DivCard, SectionCard } from "./styles";
 import { CardTech } from "../../components/cardTech";
 import borarachar from "../../assets/BoraRachar.png";
+import kenzieHub from "../../assets/KenzieHub.png";
 import { CardSaber } from "../../components/cardSaber";
 import { RollView } from "../rollView";
 
@@ -15,15 +16,18 @@ export const LightSide = () => {
           txt2={"Front-end"}
         />
         <SectionCard>
-          <DivCard>
+          <DivCard direction={"right"}>
             <CardTech
               title={"Bora Rachar"}
               description={
-                "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros"
+                "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros."
               }
               img={borarachar}
-              ferramentas={"sla,sla,lsal,las,asl,alskda"}
+              ferramentas={
+                "React, React-router-dom, Styled-components, React-hook-form, Yup e Axios."
+              }
             />
+            <span className="techs">Principais techs que eu usei:</span>
             <CardSaber
               cor={"#0fff0f "}
               tech={"React"}
@@ -32,26 +36,29 @@ export const LightSide = () => {
             />
             <CardSaber
               cor={"#ad00ad"}
-              tech={"JavaScrip"}
-              tamanho={"70"}
-              porcent={"100"}
+              tech={"React-router-dom"}
+              tamanho={"65"}
+              porcent={"95"}
             />
             <CardSaber
               cor={" #0000ff"}
-              tech={"Git"}
-              tamanho={"70"}
-              porcent={"100"}
+              tech={"Styled-components"}
+              tamanho={"50"}
+              porcent={"80"}
             />
           </DivCard>
-          <DivCard>
+          <DivCard direction={"left"}>
             <CardTech
-              title={"Bora Rachar"}
+              title={"Kenzie Hub"}
               description={
-                "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros"
+                "Kenzie Hub é um site organizador de tarefas, onde você pode criar task e edita-las e exclui-las."
               }
-              img={borarachar}
-              ferramentas={"sla,sla,lsal,las,asl,alskda"}
+              img={kenzieHub}
+              ferramentas={
+                "React, React-router-dom, Styled-components, React-hook-form, Yup, Axios e Jest."
+              }
             />
+            <span className="techs">Principais techs que eu usei:</span>
             <CardSaber
               cor={"#0000ff"}
               tech={"React"}
@@ -60,15 +67,15 @@ export const LightSide = () => {
             />
             <CardSaber
               cor={"#0fff0f"}
-              tech={"JavaScrip"}
-              tamanho={"70"}
-              porcent={"100"}
+              tech={"Yup"}
+              tamanho={"67"}
+              porcent={"97"}
             />
             <CardSaber
               cor={"#ad00ad"}
-              tech={"Git"}
-              tamanho={"70"}
-              porcent={"100"}
+              tech={"Jest"}
+              tamanho={"55"}
+              porcent={"85"}
             />
           </DivCard>
         </SectionCard>
