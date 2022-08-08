@@ -173,7 +173,8 @@ export const ContentIcons = styled.div`
   }
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 export const Icons = styled.div`
   display: flex;

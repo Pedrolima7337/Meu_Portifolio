@@ -24,7 +24,7 @@ export const LightSide = () => {
               }
               img={borarachar}
               ferramentas={
-                "React, React-router-dom, Styled-components, React-hook-form, Yup e Axios."
+                "React, React-router-dom, Styled-components, React-hook-form, JavaScript, Yup e Axios."
               }
               view={
                 "https://capstone-m3-borarachar-git-master-henriquemarioto.vercel.app/"
@@ -40,7 +40,7 @@ export const LightSide = () => {
             />
             <CardSaber
               cor={"#ad00ad"}
-              tech={"React-router-dom"}
+              tech={"JavaScript"}
               tamanho={"65"}
               porcent={"95"}
             />
@@ -59,7 +59,7 @@ export const LightSide = () => {
               }
               img={kenzieHub}
               ferramentas={
-                "React, React-router-dom, Styled-components, React-hook-form, Yup, Axios e Jest."
+                "React, React-router-dom, Styled-components, React-hook-form, JavaScript, Yup, Axios e Jest."
               }
               view={"https://kenzie-hub-completo.vercel.app/"}
               git={"https://github.com/Pedrolima7337/kenzie-hub"}
