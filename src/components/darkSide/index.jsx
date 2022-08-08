@@ -18,10 +18,10 @@ export const DarkSide = () => {
             <CardTech
               title={"Well Being System"}
               description={
-                "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros"
+                "Borarachar é um site para compartilhar serviços de streaming com outras pessoas, como Netflix, Spotify, entre outros."
               }
               img={""}
-              ferramentas={"Python, Docker, Django e Django RF"}
+              ferramentas={"Python, Docker, Django e Django RF."}
               color={"#252323"}
               dark
               git={
@@ -52,10 +52,10 @@ export const DarkSide = () => {
             <CardTech
               title={"Returning"}
               description={
-                "Uma API para aluguel de jogos e consoles, você pode alugar um console ou jogo ou colocar o seu para alugar e deixar outros "
+                "Uma API para aluguel de jogos e consoles, você pode alugar um console ou jogo ou colocar o seu para alugar e deixar outros."
               }
               img={""}
-              ferramentas={"Typescript, Docker, NodeJS, Express e Jest"}
+              ferramentas={"Typescript, Docker, NodeJS, Express e Jest."}
               color={"#252323"}
               dark
               git={"https://github.com/liuiti/m4-capstone-returning"}
