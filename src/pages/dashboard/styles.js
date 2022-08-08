@@ -14,13 +14,15 @@ export const Container = styled.div`
     border: solid 1px black;
     border-radius: 5px;
   }
-  .list {
-    margin: auto;
-  }
+
   h3 {
     font-weight: 600;
     font-size: 25px;
     margin: 20px 0;
+  }
+  @media (max-width: 1024px) {
+    height: 100%;
+    width: 100%;
   }
 `;
 
@@ -42,6 +44,11 @@ export const PerfilDiv = styled.div`
   align-items: center;
   gap: 30px;
   padding: 20px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const ContentText = styled.div`
@@ -53,10 +60,16 @@ export const ContentText = styled.div`
   flex-direction: column;
   position: relative;
   animation: ${run} 0.5s;
-  overflow: hidden;
   p {
     line-height: 26px;
     font-size: 25px;
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    p {
+      font-size: 18px;
+    }
+    width: 100%;
   }
 `;
 export const Buttons = styled.div`
@@ -85,11 +98,19 @@ export const Buttons = styled.div`
   a:active {
     color: inherit;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ContentList = styled.div`
   display: flex;
-  gap: 300px;
+  flex-wrap: wrap;
+  justify-content: space-around;
   font-size: 16px;
   .card {
     display: flex;
@@ -105,16 +126,30 @@ export const ContentList = styled.div`
     font-weight: 600;
     color: var(--metallic_seaweed);
   }
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 `;
 export const DivImg = styled.div`
   position: relative;
   animation: ${run} 0.5s;
   overflow: hidden;
+  margin-right: 20px;
   img {
     border: 2px solid var(--metallic_seaweed);
     width: 320px;
     height: 280px;
     border-radius: 100%;
+  }
+  @media (max-width: 1024px) {
+    img {
+      width: 220px;
+      height: 180px;
+    }
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `;
 const runIcons = keyframes`
@@ -129,7 +164,6 @@ const runIcons = keyframes`
   }
   `;
 export const ContentIcons = styled.div`
-  text-align: center;
   margin-top: 20px;
   color: #c9c9c9;
   h1 {
@@ -137,12 +171,16 @@ export const ContentIcons = styled.div`
     font-weight: 600;
     margin-bottom: 20px;
   }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 export const Icons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  flex-wrap: wrap;
 `;
 export const IconsImg = styled.div`
   width: 50px;
@@ -156,5 +194,8 @@ export const IconsImg = styled.div`
     cursor: pointer;
     transition: 1s;
     transform: scale(1.25, 1.25);
+  }
+  @media (max-width: 1024px) {
+    margin-right: 10px;
   }
 `;

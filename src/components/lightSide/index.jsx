@@ -26,6 +26,10 @@ export const LightSide = () => {
               ferramentas={
                 "React, React-router-dom, Styled-components, React-hook-form, Yup e Axios."
               }
+              view={
+                "https://capstone-m3-borarachar-git-master-henriquemarioto.vercel.app/"
+              }
+              git={"https://github.com/henriquemarioto/capstone-m3-borarachar"}
             />
             <span className="techs">Principais techs que eu usei:</span>
             <CardSaber
@@ -51,12 +55,14 @@ export const LightSide = () => {
             <CardTech
               title={"Kenzie Hub"}
               description={
-                "Kenzie Hub é um site organizador de tarefas, onde você pode criar task e edita-las e exclui-las."
+                "Kenzie Hub é um site organizador de tarefas, onde você pode criar task, edita-las ou exclui-las."
               }
               img={kenzieHub}
               ferramentas={
                 "React, React-router-dom, Styled-components, React-hook-form, Yup, Axios e Jest."
               }
+              view={"https://kenzie-hub-completo.vercel.app/"}
+              git={"https://github.com/Pedrolima7337/kenzie-hub"}
             />
             <span className="techs">Principais techs que eu usei:</span>
             <CardSaber

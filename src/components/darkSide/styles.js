@@ -40,9 +40,6 @@ export const DivCard = styled.section`
   .techs {
     margin-bottom: 10px;
   }
-  img {
-    height: 58px;
-  }
 `;
 
 export const ContentView = styled.section`

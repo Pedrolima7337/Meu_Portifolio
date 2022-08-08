@@ -54,6 +54,9 @@ export const DivCard = styled.section`
   .techs {
     margin: 10px 0;
   }
+  a {
+    color: #a80000;
+  }
 `;
 
 export const ContentView = styled.section`

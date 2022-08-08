@@ -22,12 +22,20 @@ export const CardTech = ({
           </span>
         </span>
         <div className="links">
-          <a href={view} target={"_blank"} rel={"noreferrer"}>
-            view
-          </a>
-          <a href={git} target={"_blank"} rel={"noreferrer"}>
-            GitHub
-          </a>
+          {dark ? (
+            <a href={git} target={"_blank"} rel={"noreferrer"}>
+              GitHub
+            </a>
+          ) : (
+            <>
+              <a href={view} target={"_blank"} rel={"noreferrer"}>
+                view
+              </a>
+              <a href={git} target={"_blank"} rel={"noreferrer"}>
+                GitHub
+              </a>
+            </>
+          )}
         </div>
       </DescContent>
 
