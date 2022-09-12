@@ -13,7 +13,7 @@ const flash = keyframes`
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,6 @@ export const ButtonInciar = styled.button`
   position: relative;
   overflow: hidden;
   transition: 0.2s;
-
   &:hover {
     animation: none;
     box-shadow: 0 0 10px var(--pewter_blue), 0 0 15px #c9d1d4, 0 0 30px #a5aaac;
@@ -99,4 +98,25 @@ export const ButtonInciar = styled.button`
 
     background: linear-gradient(360deg, transparent, var(--pewter_blue));
   }
+`;
+export const ButtonPular = styled.button`
+  width: 100px;
+  background: none;
+  color: var(--white);
+  border-radius: 6px;
+  box-shadow: 5px 5px 15px 5px var(--white),
+    5px 5px 15px 5px var(--white) insert;
+  text-shadow: 0px 0px 10px var(--white), 0px 0px;
+  transition: 0.2s;
+  font-size: 20px;
+  &:hover {
+    box-shadow: 0 0 10px var(--pewter_blue), 0 0 15px #c9d1d4, 0 0 30px #a5aaac;
+  }
+`;
+
+export const Back = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  padding: 13.3px;
 `;

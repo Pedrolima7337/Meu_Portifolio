@@ -18,6 +18,9 @@ export const Body = styled.body`
   height: 100vh;
   width: 100%;
   background-color: var(--black);
+  .sla {
+    color: white;
+  }
 `;
 export const Container = styled.div`
   width: 100%;
